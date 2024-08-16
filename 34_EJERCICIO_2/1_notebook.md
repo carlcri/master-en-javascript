@@ -1,4 +1,4 @@
-# 34 ejercicio 3
+# 34 ejercicio 2
 
 Usando un bucle, mostrar la media y la suma de los numeros introducidos, hasta introducir un numero negativo. 
 

@@ -36,7 +36,7 @@ Y mostrarlo en consola. Pero vaya sorpresa que no muestra nada, nos muestra null
 
     null
 
-Como si no existiera. ¿Poeque pasa esto cuando en realidad si existe un elemento con esas caracteristicas? 😫
+Como si no existiera. ¿Porque pasa esto cuando en realidad si existe un elemento con esas caracteristicas? 😫
 
 Porque estoy cargando el script antes de que el html este completamente listo. Por tanto no lo va encontrar. Por esta razon colocamos las etiquetas *script* al final del *body*. 
 
