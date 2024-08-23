@@ -60,7 +60,7 @@ Porque estoy cargando el script antes de que el html este completamente listo. P
 
 Y ahora mira lo que muestra en consola:
 
-![](https://imgur.com/xE6TpLa.png)
+![output](https://i.imgur.com/xE6TpLa.png)
 
 ## InnerHTML 
 
@@ -91,7 +91,7 @@ SOL
 
 Mostrara en consola, usando el codigo JS anterior:
 
-![](https://imgur.com/Bfe9EjR.png)
+![output](https://i.imgur.com/Bfe9EjR.png)
 
 Obtener contenido: Cuando utilizas element.innerHTML, obtienes una cadena de texto que representa el HTML dentro del elemento seleccionado.
 
@@ -122,4 +122,66 @@ caja.style.color = "green"; 👈
 console.log(caja.innerHTML);
 ```
 
-![](https://imgur.com/CUCCtoj.png)
+![output](https://i.imgur.com/CUCCtoj.png)
+
+
+### Ejercicio
+
+Script: *64-intro-v1.js*
+
+Crear una funcion que me permita cambiar el color. 
+
+```js
+function cambiaColor(color){
+    caja.style.color = color;
+}
+
+var caja = document.getElementById("mi-caja");
+console.log(caja.innerHTML);
+caja.innerHTML = "Texto Manipulado con JS"
+console.log(caja.innerHTML);
+```
+Creamos la funcion *cambiaColor*, y para invocarla, se hace directamente en la consola:
+
+![](https://i.imgur.com/mkTJtr6.png)
+
+### Ejercicio
+
+Crear una funcion que permita modificar el color, el padding, y el color background del elemento *mi-caja* 
+
+```js
+function formatoCaja(color, padding, background){
+    caja.style.color = color;
+    caja.style.padding = padding;
+    caja.style.background = background;
+}
+```
+y desde la consola, ingresamos los parametros de la funcion:
+
+![](https://i.imgur.com/VgnvunG.png)
+
+Tambien podemos modificar la funcion, para que los parametros de *padding* y *background* sean opcionales:
+
+```js
+function formatoCaja(color, padding='0px', background='automatic'){ 👈
+    caja.style.color = color;
+    caja.style.padding = padding;
+    caja.style.background = background;
+}
+```
+
+### Query Selector
+
+Forma alterna para seleccionar un elemento mucho mas elegante y simple que *getElementById* para seleccionar un elemento:
+
+Dado que caja es un *id*, uso #; si fuera una clase, usaria un punto.
+
+
+
+El método *document.querySelector* en JavaScript se utiliza para seleccionar el primer elemento en el documento HTML que coincida con un selector CSS especificado. Este método es muy poderoso porque te permite seleccionar elementos de manera flexible, usando cualquier tipo de selector CSS (clases, IDs, etiquetas, atributos, combinaciones de selectores, etc.).
+
+```js
+console.log('Usando querySelector')
+var caja_1 = document.querySelector("#mi-caja");
+console.log(caja.innerHTML);
+```

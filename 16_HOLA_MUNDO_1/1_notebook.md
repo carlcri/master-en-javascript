@@ -25,5 +25,5 @@ document.write("Hola Mundo desde fichero externo")
 ```
 entonces:
 
-![](https://imgur.com/JE4drSD.png)
+![](https://i.imgur.com/JE4drSD.png)
 

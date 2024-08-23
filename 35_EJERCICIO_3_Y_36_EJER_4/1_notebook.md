@@ -44,7 +44,7 @@ else{
 
 Con la primera sentencia se esta colocando un h3 directamente en el documento html, lo mismo que con la segunda. 
 
-![](https://imgur.com/OL2RIxq.png)
+![](https://i.imgur.com/OL2RIxq.png)
 
 ### Añadiendo un salto de linea.
 
@@ -69,6 +69,48 @@ else{
 }
 ```
 
-![](https://imgur.com/xfco6Wg.png)
+![](https://i.imgur.com/xfco6Wg.png)
 
 El profe uso ``<br/>``
+
+
+# 36 Ejercicio 4
+
+Mostrar todos los numeros impares que hay entre dos numeros introducidos por el usuario. Hacerlo con un while
+
+## Solucion
+
+- creamos un nuevo script *ejercicio_36.js* y en la etiqueta source de nuestro html lo relacionamos:
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>ejercicio 3</title>
+    <script type="text/javascript" src="./JS/ejercicio_36.js"></script> 👈
+</head>
+<body>
+    <h1>Curso JS</h1>
+    <p>primer script con JS</p>
+</body>
+</html>
+```
+
+Nota que el operador de modulo es el mismo que el de python.
+
+```js
+'use strict'
+
+console.log("Ejercicio-36. Muestra los numeros impares entre un rango dado por el usuario")
+var low = parseInt(prompt("valor minimo", 0));
+var high = parseInt(prompt("valor maximo", 1));
+
+while(low <= high){
+    if(low%2 != 0){
+        console.log(low);
+        document.write(low + '<br>')
+    }
+    low++;
+}
+```
