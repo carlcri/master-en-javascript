@@ -1,5 +1,8 @@
 'use strict'
 
+// Free API Key
+const REQRES_API_KEY = 'reqres-free-v1';
+
 function listadoUsuarios(usuarios){
      let  usuarios_lista = document.querySelector('.usuarios-lista');
      usuarios.forEach(function(element){
@@ -27,12 +30,20 @@ function listadoUsuario(usuario){
 
 // devuelve un objeto de tipo Promise
 function getUsuarios(){
-     return fetch('https://reqres.in/api/users?page=1');
+     return fetch('https://reqres.in/api/users?page=2', {
+          headers: {
+               'x-api-key': REQRES_API_KEY
+          }
+     });
 }
 
 
 function getUsuario(id){
-     return fetch(`https://reqres.in/api/users/${id}`)
+     return fetch(`https://reqres.in/api/users/${id}`, {
+          headers: {
+               'x-api-key': REQRES_API_KEY     
+          }
+     })
 }
 
 

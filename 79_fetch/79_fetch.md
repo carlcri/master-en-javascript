@@ -139,4 +139,27 @@ Dentro de la consola en la parte de red, podemos darnos una idea cuanto tardan e
 En la siguiente seccion, y aprovechando los tiempos de carga, mostrar un mensaje de cargando, que luego desaparecera una vez carguen los datos.
 
 
+## Solucionando un error.
 
+Nuevamente despues de retomar el trabajo en junio del 2025. Se noto que no estaba cargando la informacion de los usuarios. E investigando el servicio *reqres*, hay un error de:
+
+`
+     error: "Missing API key.",
+`
+
+Ahora para acceder a dicho servicio de necesita dicha clave, que la obtenemos de la pagina de *reqres*, donde indica:
+
+![image](https://imgur.com/pRmi6ax.png)
+
+Esta API key la agregamos a nuestro **fetch** un segundo argumento, de la siguiente manera:
+
+```js
+fetch('https://reqres.in/api/users?page=3', {
+     headers: {
+          'x-api-key': 'reqres-free-v1' 
+     }
+})
+```
+Es mas, si queremos usar INSOMNIA, añadir el *header*:
+
+![image](https://imgur.com/ws3dBid.png)

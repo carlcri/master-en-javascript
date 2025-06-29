@@ -1,10 +1,15 @@
 'use strict'
 
+const REQRES_API_KEY = 'reqres-free-v1';
 var usuarios = []
 var usuarios_lista = document.querySelector('#usuarios-lista');
 var mensaje_carga = document.querySelector('.loading');
 
-fetch('https://reqres.in/api/users?page=1')
+fetch('https://reqres.in/api/users?page=2', {
+     headers: {
+          'x-api-key': REQRES_API_KEY
+     }
+})
      .then(function(data) {
           return data.json();  
      })

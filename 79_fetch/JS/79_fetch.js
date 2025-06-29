@@ -18,7 +18,11 @@ console.log(usuarios_lista.innerHTML)
 // })
 
 
-fetch('https://reqres.in/api/users?page=1')
+fetch('https://reqres.in/api/users?page=2', {
+     headers: {
+          'x-api-key': 'reqres-free-v1' 
+     }
+})
      .then(function(data) {
           return data.json();  // Convierte la respuesta a JSON
      })
@@ -32,6 +36,8 @@ fetch('https://reqres.in/api/users?page=1')
           })
 });
 
+
+// console.log(`numero usuarios: ${usuarios.length}`)
 
 
 // for(item in usuarios){
