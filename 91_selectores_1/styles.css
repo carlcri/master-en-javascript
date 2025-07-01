@@ -1,0 +1,4 @@
+.with_border{
+    border: 5px dashed rebeccapurple;
+    padding: 5px;
+}

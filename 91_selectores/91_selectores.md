@@ -54,3 +54,47 @@ Esto es encadenando la llamada a los metodos
 
 Es mas no se necesita declarar la variable.
 
+### Selectores de Clases
+
+Modificando el HTML:
+
+```html
+    <div id="yellow" class="zebra">I am yellow and zebra</div>
+    <div id="red" class="zebra">I am red and zebra</div>
+    <div class="zebra">I am a zebra</div>
+```
+
+y en el .js con su respectivo selector de clase:
+
+```js
+    var clase_zebra = $('.zebra');
+    console.log(clase_zebra)
+```
+
+El resultado:
+
+![](https://imgur.com/M37QbtS.png)
+
+Como era de esperarse es un arreglo de 3 elementos, el primero `yellow.zebra`, el segundo `red.zebra`, y el tercero `.zebra`. ¿TIene sentido?
+
+Si queremos acceder al primer elemento del arreglo, lo podemos hacer de dos formas, una de ellas con el metodo `eq`:
+
+```js
+    console.log(clase_zebra[0]);
+    console.log(clase_zebra.eq(0))
+```
+
+
+#### Ejercicio
+
+Darle un estilo CSS a la clase zebra.
+
+```js
+    clase_zebra.css('background', 'green')
+               .css('color', 'brown');
+```
+
+
+
+
+
