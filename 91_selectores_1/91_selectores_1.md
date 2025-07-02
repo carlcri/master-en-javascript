@@ -24,6 +24,8 @@ Y para que cuando se de click se agregue el borde:
     });
 ```
 
+Dentro de una función de evento de jQuery, la palabra clave `this` se refiere al elemento HTML específico que disparó el evento (es decir, el elemento en el que el usuario hizo clic).
+
 Una vez se da click, se añade el borde, nota que cuando se inspecciona el elemento, se añade una nueva clase:
 
 ANTES
