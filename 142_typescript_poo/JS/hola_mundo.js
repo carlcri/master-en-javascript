@@ -9,4 +9,4 @@
 // console.log(greet(123)); // Esto también dará un error de tipo
 console.log('hola ts');
 console.log('bien bien');
-console.log('soy un gatito');
+console.log('soy gatito gatito feliz');

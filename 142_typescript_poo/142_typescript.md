@@ -123,4 +123,19 @@ ir a `/home/carlos/Documents/master-en-javascript/142_typescript_poo`
 
 y `npx tsc JS/hola_mundo.ts`
 
-Generara un .js, que ese si lo incluyo en mi index.html. Cada vez que halla un cambio vuelvo a ejecutar el comando anterior.
+Generara un .js, que ese si lo incluyo en mi index.html. Cada vez que halla un cambio vuelvo a ejecutar el comando anterior. 😏
+
+# Compilacion
+
+Cada vez que hago un cambio, pues debo compilarlo con `npx tsc JS/hola_mundo.ts`  para que tome los cambios. Un proces engorroso.
+
+Usamos el comando con la bandera `watch`:
+
+`npx tsc --watch JS/hola_mundo.ts`
+
+Incluso la podriamos hacer mas general para mirar todos los archivos cuya extension sea `.ts`:
+
+`npx tsc --watch JS/*.ts`  🙂
+
+
+
