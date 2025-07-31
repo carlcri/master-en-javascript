@@ -1,0 +1,12 @@
+input {
+    padding: 20px;
+    width: 300px;
+    font-size: 25px;
+}
+
+#box {
+    border: 4px dotted rgb(6, 48, 54);
+    width: 300px;
+    font-size: 25px;
+    display: none;
+}

@@ -15,7 +15,8 @@ $(document).ready(function() {
         console.log($taskItem[0].innerHTML);     
 
         $taskItem.addClass('completed');
-        console.log($taskItem[0].innerHTML); 
+        console.log($taskItem[0].innerHTML);
+        console.log($taskItem.eq(0).text())
 
        const $taskText =  $taskItem.find('.task-text').text();
        console.log(`texto de la tarea clickeada: ${$taskText}`);
@@ -26,4 +27,5 @@ $(document).ready(function() {
         //$buttonClicked.prop('disabled', true);
     });
 });
+
 
